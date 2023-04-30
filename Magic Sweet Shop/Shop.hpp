@@ -14,4 +14,5 @@ public:
 
 private:
 	Array<Star> stars;
+	const Texture shop{ U"shop.png" };
 };
