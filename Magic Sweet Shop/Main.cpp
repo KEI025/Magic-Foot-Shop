@@ -16,6 +16,7 @@ void Main()
 	TextureAsset::Register(U"Ghost-0", U"img/ghost-0.png");
 	TextureAsset::Register(U"Ghost-1", U"img/ghost-1.png");
 
+	FontAsset::Register(U"dot35",35, U"example/font/DotGothic16/DotGothic16-Regular.ttf", FontStyle::Bitmap);
 	FontAsset::Register(U"dot25",25, U"example/font/DotGothic16/DotGothic16-Regular.ttf",FontStyle::Bitmap);
 
 	//const Font font{ 32, U"example/font/DotGothic16/DotGothic16-Regular.ttf" };
