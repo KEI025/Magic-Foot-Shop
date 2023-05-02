@@ -153,7 +153,7 @@
     <ClCompile Include="Game.cpp">
       <Filter>Source Files\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Shop.cpp">
+    <ClCompile Include="Title.cpp">
       <Filter>Source Files\Scene</Filter>
     </ClCompile>
     <ClCompile Include="Menu.cpp">
@@ -800,7 +800,7 @@
     <ClInclude Include="Common.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Shop.hpp">
+    <ClInclude Include="Title.hpp">
       <Filter>Source Files\Scene</Filter>
     </ClInclude>
     <ClInclude Include="Menu.hpp">

@@ -1,5 +1,5 @@
 ﻿#include "Common.hpp"
-#include "Shop.hpp"
+#include "Title.hpp"
 #include "Menu.hpp"
 
 void Main()
@@ -8,7 +8,7 @@ void Main()
 	Window::Resize(kWindowSize);
 
 	App manager;
-	manager.add<Shop>(State::Shop);
+	manager.add<Title>(State::Title);
 	manager.add<Menu>(State::Menu);
 
 	while (System::Update()) {

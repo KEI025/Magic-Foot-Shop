@@ -116,7 +116,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="Title.cpp" />
     <ClCompile Include="Star.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -320,7 +320,7 @@
     <ClInclude Include="Common.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="Menu.hpp" />
-    <ClInclude Include="Shop.hpp" />
+    <ClInclude Include="Title.hpp" />
     <ClInclude Include="Star.hpp" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
