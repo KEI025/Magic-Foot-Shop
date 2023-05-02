@@ -5,10 +5,10 @@ const Size kWindowSize{ 900,650 };
 const int kShopStar = 100;
 
 enum class State {
-	Shop,
+	Title,
 	Menu,
 	Game
 };
 
-
+ 
 using App = SceneManager<State>;

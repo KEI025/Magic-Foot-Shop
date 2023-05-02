@@ -5,7 +5,7 @@ class Star {
 
 public:
 
-	Star(const Vec2 pos,const int size);
+	Star(const Vec2 first_pos,const int size);
 
 	void update();
 
@@ -15,7 +15,6 @@ private:
 
 	int size;
 	Vec2 pos;
-	double amplitude;
-	double frequency;
-	double phase;
+	Vec2 first_pos;
+	double move_speed;
 };
