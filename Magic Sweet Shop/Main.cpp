@@ -26,6 +26,7 @@ void Main()
 	TextureAsset::Register(U"donut-1", U"img/donut-1.png");
 	TextureAsset::Register(U"donut-2", U"img/donut-2.png");
 	TextureAsset::Register(U"donut-3", U"img/donut-3.png");
+	TextureAsset::Register(U"donut-4", U"img/donut-4.png");
 
 	FontAsset::Register(U"dot35",35, U"example/font/DotGothic16/DotGothic16-Regular.ttf", FontStyle::Bitmap);
 	FontAsset::Register(U"dot25",25, U"example/font/DotGothic16/DotGothic16-Regular.ttf",FontStyle::Bitmap);
