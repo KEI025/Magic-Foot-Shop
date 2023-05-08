@@ -16,6 +16,10 @@ void Title::update() {
 	for (auto& star : stars) {
 		star.update();
 	}
+
+	if (KeySpace.down() || MouseL.pressed()) {
+		changeScene(State::Menu);
+	}
 }
 
 void Title::draw() const {
@@ -27,11 +31,18 @@ void Title::draw() const {
 		star.draw();
 	}
 
-	shop.scaled(1.5).drawAt(kWindowSize.x / 2, kWindowSize.y - 192);
-	witch(0, 0, 32, 32).scaled(1.5).drawAt(Scene::Center());
+	TextureAsset(U"Title").drawAt(Scene::Center().movedBy(0,-60));
+	FontAsset(U"dot25")(U"- Click or Space Push -").drawAt(Scene::Center().movedBy(0,20));
+
+	TextureAsset(U"Shop").scaled(1.5).drawAt(kWindowSize.x / 2, kWindowSize.y - 192);
 
 	const Vec2 left_ghost_pos = { kWindowSize.x / 5,kWindowSize.y - 160 };
 
-	ghost(0, 64, 32, 32).scaled(1.5).drawAt(left_ghost_pos.movedBy(0, Periodic::Sine0_1(2.5s) * 10));
-	ghost(0, 64, 32, 32).scaled(1.5).drawAt(left_ghost_pos.movedBy(-96, Periodic::Sine0_1(2.0s) * 10));
+	TextureAsset(U"Ghost-0")(0, 64, 32, 32).scaled(1.5).drawAt(left_ghost_pos.movedBy(0, Periodic::Sine0_1(2.5s) * 10));
+	TextureAsset(U"Ghost-1")(0, 64, 32, 32).scaled(1.5).drawAt(left_ghost_pos.movedBy(-96, Periodic::Sine0_1(2.0s) * 10));
+
+	const Vec2 right_ghost_pos = { kWindowSize.x - left_ghost_pos.x ,kWindowSize.y - 160 };
+
+	TextureAsset(U"Ghost-0")(0, 0, 32, 32).scaled(1.5).drawAt(right_ghost_pos.movedBy(0, Periodic::Sine0_1(2.5s) * 10));
+	TextureAsset(U"Ghost-1")(0, 0, 32, 32).scaled(1.5).drawAt(right_ghost_pos.movedBy(96, Periodic::Sine0_1(2.0s) * 10));
 }

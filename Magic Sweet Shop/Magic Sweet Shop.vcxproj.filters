@@ -162,6 +162,12 @@
     <ClCompile Include="Star.cpp">
       <Filter>Source Files\Utils</Filter>
     </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -807,6 +813,12 @@
       <Filter>Source Files\Scene</Filter>
     </ClInclude>
     <ClInclude Include="Star.hpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.hpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
       <Filter>Source Files\Utils</Filter>
     </ClInclude>
   </ItemGroup>

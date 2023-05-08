@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include "Common.hpp"
+#include "Card.hpp"
 
 class Menu : public App::Scene
 {
@@ -12,5 +13,5 @@ public:
 	void draw() const override;
 
 private:
-
+	Array<Card> cards;
 };
