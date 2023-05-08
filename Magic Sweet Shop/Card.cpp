@@ -9,7 +9,12 @@ Card::Card(const Vec2 pos,const String name, const Duration time, const String l
 
 void Card::update()
 {
+	RoundRect rect{ pos,kCardSize,10 };
+	RoundRect btn{ pos.movedBy((rect.w / 2) - 50,150),100,50,5 };
 
+	if (btn.leftPressed()) {
+		scene_change = true;
+	}
 }
 
 void Card::draw() const
@@ -28,8 +33,8 @@ void Card::draw() const
 
 	RoundRect btn{ pos.movedBy((rect.w / 2) - 50,150),100,50,5 };
 
-	TextureAsset(left_img_key).scaled(0.06).drawAt(pos.movedBy((rect.w / 2) + 75, 175));
-	TextureAsset(right_img_key).scaled(0.06).drawAt(pos.movedBy((rect.w / 2) - 75, 175));
+	TextureAsset(right_img_key).scaled(0.06).drawAt(pos.movedBy((rect.w / 2) + 75, 175));
+	TextureAsset(left_img_key).scaled(0.06).drawAt(pos.movedBy((rect.w / 2) - 75, 175));
 
 	if (btn.mouseOver()) {
 		btn.drawFrame(3, Palette::Black);

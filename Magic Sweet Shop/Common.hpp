@@ -11,5 +11,8 @@ enum class State {
 	Game
 };
 
- 
-using App = SceneManager<State>;
+struct GameDate {
+	String selected_stege;
+};
+
+using App = SceneManager<State,GameDate>;
